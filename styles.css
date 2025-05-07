@@ -1,0 +1,101 @@
+/* Algemene stijlen */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container voor alle pagina's */
+.custom-container {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+    .custom-container {
+        max-width: 100%;
+    }
+}
+
+/* Navigatiebalk */
+.navbar-custom {
+    background-color: #2c3e50 !important;
+    padding: 10px 0;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ecf0f1 !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #bdc3c7 !important;
+}
+
+/* Afbeeldingen grid (voor index.html) */
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.img-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.img-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Formulier stijlen (voor contact.html) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1a252f;
+}
+
+/* Footer */
+footer {
+    height: 200px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
